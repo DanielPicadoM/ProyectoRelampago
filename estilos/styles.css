@@ -95,8 +95,6 @@ body {
 
 
 
-
-
 /* Agregamos estilos para el contenedor de tarjetas */
 .cards-container {
   display: flex;
@@ -119,3 +117,75 @@ body {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+.container-botones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.boton-persona {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.boton-persona:hover {
+  background-color: #0056b3;
+}
+
+.icono-boton {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.nombre-boton {
+  font-weight: bold;
+}
+
+.menu-desplegable {
+  position: relative;
+}
+
+.contenido-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.menu-desplegable:hover .contenido-menu {
+  display: block;
+}
+
+.enlace-menu {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.enlace-menu:hover {
+  background-color: #ddd;
+}
