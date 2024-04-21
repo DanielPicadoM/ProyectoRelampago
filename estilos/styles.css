@@ -45,6 +45,14 @@ body {
   background-size: cover;
 }
 
+.card-image-G03 {
+  grid-area: image;
+  background: url("G01-Johnny.png"); /* Reemplaza "img1.jpg" con la ruta correcta de tu imagen */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
 .card-text {
   grid-area: text;
   margin: 25px;
