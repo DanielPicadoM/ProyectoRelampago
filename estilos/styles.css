@@ -29,9 +29,9 @@ body {
   width: 300px;
 }
 
-.card-image {
+.card-image-G01 {
   grid-area: image;
-  background: url("img1.jpg"); /* Reemplaza "img1.jpg" con la ruta correcta de tu imagen */
+  background: url("G01-Joseph.png"); /* Reemplaza "img1.jpg" con la ruta correcta de tu imagen */
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
@@ -44,7 +44,7 @@ body {
 
 .card-text .date {
   color: #3164F4;
-  font-size: 13px;
+  font-size: 20px;
 }
 
 .card-text p {
