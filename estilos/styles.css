@@ -3,10 +3,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   /* overflow: hidden; */
   
 #logo {
   margin-top: 0%;
+=======
+  font-family: 'Roboto', sans-serif; /* Cambiado roboto por 'Roboto' */
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+>>>>>>> 3e5b36d7b76a80e2591bb83eee45ca46ff8303a6
 }
 
 .menu {
@@ -36,78 +46,72 @@ body {
   border-radius: 18px;
   background: white;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-  font-family: roboto;
+  font-family: 'Roboto', sans-serif; /* Cambiado roboto por 'Roboto' */
   text-align: center;
   transition: 0.5s ease;
   cursor: pointer;
   margin: 30px;
-  width: 300px; /* Establecemos un ancho fijo */
+  width: 300px;
 }
 
-.card-image {
+.card-image-G01 {
   grid-area: image;
-  background: url("img1.jpg");
+  background: url("G01-Joseph.png"); /* Reemplaza "img1.jpg" con la ruta correcta de tu imagen */
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  background-size: cover; }
+  background-size: cover;
+}
+
+.card-image-G02 {
+  grid-area: image;
+  background: url("G02-Mauricio.png"); /* Reemplaza "img1.jpg" con la ruta correcta de tu imagen */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-image-G03 {
+  grid-area: image;
+  background: url("G01-Johnny.png"); /* Reemplaza "img1.jpg" con la ruta correcta de tu imagen */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
 
 .card-text {
   grid-area: text;
-  margin: 25px; }
-  .card-text .date {
-    color: #3164F4;
-    font-size: 13px; }
-  .card-text p {
-    color: grey;
-    font-size: 15px;
-    font-weight: 300; }
-  .card-text h2 {
-    margin-top: 0px;
-    font-size: 28px; }
+  margin: 25px;
+}
+
+.card-text .date {
+  color: #3164F4;
+  font-size: 20px;
+}
+
+.card-text p {
+  color: grey;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.card-text h2 {
+  margin-top: 0px;
+  font-size: 28px;
+}
 
 .card-stats {
   grid-area: stats;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr); /* Utiliza la función repeat para definir las columnas */
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background: #3164F4; }
-  .card-stats .stat {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white; }
-  .card-stats .border {
-    border-left: 1px solid #3164F4;
-    border-right: 1px solid #3164F4; }
-  .card-stats .value {
-    font-size: 22px;
-    font-weight: 500; }
-    .card-stats .value sup {
-      font-size: 12px; }
-  .card-stats .type {
-    font-size: 11px;
-    font-weight: 300;
-    text-transform: uppercase; }
-
-.card:hover {
-  transform: scale(1.15);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6); }
-
-
-
-  .custom-button {
-    background-color: #3164F4;  /* Color de fondo azul */
-    color: #FFFFFF;             /* Color de texto blanco */
-    border: none;               /* Sin borde */
-    cursor: pointer;            /* Cambia el cursor al pasar por encima */
-    border-radius: 5px;         /* Bordes redondeados */
-    transition: background-color 0.3s ease;  /* Transición suave del color de fondo */
+  background: #3164F4;
+  align-items: center; /* Alinea los elementos verticalmente */
+  justify-content: space-around; /* Espacio entre los elementos */
+  gap: 10px; /* Espacio entre las celdas del grid */
 }
 
+<<<<<<< HEAD
 .custom-button:hover {
     background-color: #1d46b9;  /* Color de fondo azul más oscuro al pasar el cursor */
 }
@@ -119,25 +123,82 @@ body {
 
 /* Agregamos estilos para el contenedor de tarjetas */
 .cards-container {
+=======
+/* Agregado el estilo para .boton */
+.boton {
+>>>>>>> 3e5b36d7b76a80e2591bb83eee45ca46ff8303a6
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column; /* Cambiado el flujo a column */
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+ 
+  background-color: #3164F4;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin: auto;
+  text-align: center; /* Centra el texto */
 }
 
-/* Media queries para hacerlas responsive */
-@media (max-width: 1200px) {
-  .card {
-    max-width: calc(50% - 20px); /* Máximo ancho de dos tarjetas por fila */
-    width: 100%; /* Fallback para garantizar que no se exceda el máximo ancho */
-  }
+/* Agregado el estilo para .boton:hover */
+.boton:hover {
+  background-color: #1d46b9;
 }
 
-@media (max-width: 720px) {
-  .card {
-    max-width: calc(50% - 20px); /* Máximo ancho de dos tarjetas por fila */
-    width: 100%; /* Fallback para garantizar que no se exceda el máximo ancho */
-  }
+/* Agregado el estilo para .icono */
+.icono {
+  margin-bottom: 10px; /* Mueve el icono abajo del texto */
+  color: #ffffff;
+}
+
+<<<<<<< HEAD
+
+
+=======
+/* Agregado el estilo para .submenu */
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  z-index: 1;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 
 
+/* Agregado el estilo para .boton:hover .submenu */
+.boton:hover .submenu {
+  display: block;
+}
+
+
+/* Agregado el estilo para el título del submenú */
+.submenu h3 {
+  background-color: #3164F4; /* Color de fondo */
+  color: #FFFFFF; /* Color del texto */
+  margin: 0; /* Elimina el margen */
+  padding: 10px; /* Añade padding alrededor del título */
+  font-size: 18px; /* Tamaño de fuente */
+  text-align: center; /* Alineación del texto */
+  border-top-left-radius: 10px; /* Bordes redondeados arriba-izquierda */
+  border-top-right-radius: 10px; /* Bordes redondeados arriba-derecha */
+}
+
+/* Agregado el estilo para .submenu a */
+.submenu a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Agregado el estilo para .submenu a:hover */
+.submenu a:hover {
+  background-color: #ccc;
+}
+>>>>>>> 3e5b36d7b76a80e2591bb83eee45ca46ff8303a6
